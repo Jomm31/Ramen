@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="695.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cce104_ramen.HelloController">
+    <children>
+        <ImageView fitHeight="382.0" fitWidth="364.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Images/Black%20and%20Red%20Simple%20Ramen%20Food%20Logo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="393.0" layoutY="126.0" text="Username" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="396.0" layoutY="205.0" text="Password" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="Username_Txt" layoutX="393.0" layoutY="160.0" onAction="#handleLoginButtonAction" prefHeight="25.0" prefWidth="259.0" />
+        <TextField fx:id="Password_Txt" layoutX="393.0" layoutY="235.0" onAction="#handleLoginButtonAction" prefHeight="25.0" prefWidth="259.0" />
+        <Button fx:id="Login_Button" layoutX="393.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="25.0" prefWidth="95.0" text="Log - In">
+            <effect>
+                <Lighting>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                    <bumpInput>
+                        <Blend />
+                    </bumpInput>
+                </Lighting>
+            </effect>
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="Exit_Button" layoutX="565.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleExitButtonAction" prefHeight="16.0" prefWidth="95.0" text="Exit">
+            <effect>
+                <Lighting>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                    <bumpInput>
+                        <Blend />
+                    </bumpInput>
+                </Lighting>
+            </effect>
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="366.0" fitWidth="364.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Black%20and%20Red%20Simple%20Ramen%20Food%20Logo.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
